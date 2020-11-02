@@ -1,11 +1,11 @@
 import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[dz-menu-icon], dz-menu-icon',
+  selector: '[dz-submenu-icon], dz-submenu-icon',
   // host: {'class': 'menu-icon'}
 })
 export class MenuIconDirective {
   constructor(public elementRef: ElementRef, private renderer: Renderer2) {
-    this.renderer.addClass(elementRef.nativeElement, 'menu-icon');
+    this.renderer.addClass(elementRef.nativeElement, 'dz-submenu-icon');
   }
 }

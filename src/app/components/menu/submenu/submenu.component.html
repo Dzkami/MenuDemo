@@ -1,6 +1,8 @@
-<div class="submenu">
-  <ng-content select="dz-menu-icon"></ng-content>
+<div class="dz-menu-submenu">
+  <ng-content select="dz-submenu-icon"></ng-content>
   <ng-content select="dz-submenu-title"></ng-content>
-  <ng-content select="dz-test"></ng-content>
+  <div class="dz-submenu-arrow"></div>
 </div>
-<ng-content></ng-content>
+<div>
+  <ng-content select="dz-submenu, dz-menu-group, dz-menu-item"></ng-content>
+</div>
